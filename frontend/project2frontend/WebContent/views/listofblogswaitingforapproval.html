@@ -1,0 +1,19 @@
+<div class="panel panel-info">
+<div class="panel-heading">
+Blogs Waiting for approval
+</div>
+<div class="panel-body">
+<div ng-if="blogsWaitingForApproval.length==0">No blogs waiting for approval</div>
+<ul style="list-style:none;">
+<li ng-repeat="blogPost in blogsWaitingForApproval">
+<a href="#/getblogwaitingforapproval/{{blogPost.id}}"><b>Blog Title:</b>
+{{blogPost.blogTitle}}</a><br>
+<b>Posted On:</b>
+{{blogPost.postedOn | date:'dd:MM:yyyy'}}<br>
+<b>Posted By:</b>
+{{blogPost.postedBy.firstname}} &nbsp; {{blogPost.postedBy.lastname}}
+<hr>
+</li>
+</ul>
+</div>
+</div>

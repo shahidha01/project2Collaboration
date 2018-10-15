@@ -1,0 +1,14 @@
+<div class="panel panel-info">
+	<div class="panel-heading">
+		<b>Blog Title:</b>{{notification.blogPostTitle}}<br> 
+		<b>Posted By:</b>{{notification.email}}<br> 
+		<b>Approval Status:</b>{{notification.approvalStatus}}<br>
+		<b>Rejection Reason</b>{{notification.rejectionReason}}<br>
+		
+	</div>
+	<div class="panel-body">
+		<p ng-bind-html="content">
+	</div>
+
+<a href="#/getblogs">Get all blogs</a>
+</div>

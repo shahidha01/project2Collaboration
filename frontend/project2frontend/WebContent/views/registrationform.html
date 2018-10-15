@@ -1,0 +1,21 @@
+<span style="color:red">{{error.errorMsg}}</span>
+<div class="panel panel-info" >
+<div class="panel-heading"><b>Registration Page</b></div>
+<div class="panel-body">
+<form>
+Enter Email:<input type="email" ng-model="user.email" required class="form-control" placeholder="Email Address"><br>
+Enter Password: <input type="password" ng-model="user.password" required class="form-control" placeholder="Password"><br>
+Enter Firstname :<input type="text" ng-model="user.firstname" required class="form-control" placeholder="First-Name"><br>
+Enter lastname: <input type="text" ng-model="user.lastname" class="form-control" placeholder="Last-Name"><br>
+Enter phonenumber:<input type="text" ng-model="user.phonenumber" class="form-control" placeholder="Phone Number" ><br>
+Select Role : <select ng-model="user.role">
+<option value="STUDENT">Student
+<option value="EMPLOYEE">Employee
+<option value="ALUMNI">Alumni
+
+</select>
+<br><br>
+<button ng-click="registration(user)">Register</button>
+</form>
+</div>
+</div>

@@ -1,0 +1,11 @@
+/**
+ * 
+ */
+app.controller('HomeCtrl',function(BlogPostService,$rootScope,$location){
+	BlogPostService.getNotificationNotViewed().then(function(response){
+		$rootScope.notifications=response.data
+	},function(response){
+		if(response.status==401)
+			$location.path('/login')
+	})
+})

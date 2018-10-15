@@ -1,0 +1,21 @@
+<span style="color:red">{{error.errorMsg}}</span>
+<div class="panel panel-info" >
+<div class="panel-heading"><b>Update Profile Page</b></div>
+<div class="panel-body">
+<form>
+Enter Email:<input type="email" ng-model="user.email" required disabled><br>
+Enter Password: <input type="password" ng-model="user.password" required class="form-control" placeholder="Password"><br>
+Enter Firstname :<input type="text" ng-model="user.firstname" required class="form-control"><br>
+Enter lastname: <input type="text" ng-model="user.lastname" class="form-control"><br>
+Enter phonenumber:<input type="text" ng-model=user.phonenumber class="form-control"><br>
+Select Role : <select ng-model="user.role">
+<option value="STUDENT">Student
+<option value="EMPLOYEE">Employee
+<option value="ALUMNI">Alumni
+
+</select>
+<br><br>
+<button ng-click="updateProfile(user)"><span class="glyphicon glyphicon-ok"></span>Update</button>
+</form>
+</div>
+</div>

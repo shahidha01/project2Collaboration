@@ -1,0 +1,14 @@
+<span style="color:red">{{error.errorMsg}}</span>
+
+<div class="panel panel-info" >
+<div class="panel-heading"><b>Login Page</b></div>
+
+<div class="panel-body">
+<form>
+Enter Email:<input type="email" ng-model="user.email" required class="form-control" placeholder="Email Address"><br>
+Enter password:<input type="password" ng-model="user.password" required class="form-control" placeholder="Email Address"><br>
+<button ng-click="login(user)">Sign In</button>
+
+</form>
+</div>
+</div>
